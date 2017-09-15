@@ -1085,12 +1085,14 @@ public class Folder extends LinearLayout implements DragSource, View.OnClickList
                     mContent.getPaddingRight() + cellIconGap,
                     mFooter.getPaddingBottom());
         }
-        mFolderNameLv.measure(contentAreaWidthSpec,20);
+        mFolderNameLv.measure(contentAreaWidthSpec, 50);
         mFooter.measure(contentAreaWidthSpec,
                 MeasureSpec.makeMeasureSpec(mFooterHeight, MeasureSpec.EXACTLY));
 
         int folderWidth = getPaddingLeft() + getPaddingRight() + contentWidth;
         int folderHeight = getFolderHeight(contentHeight);
+        /*int folderWidth = 650;//modify folder taoqi
+        int folderHeight = 800;*/
         setMeasuredDimension(folderWidth, folderHeight);
     }
 

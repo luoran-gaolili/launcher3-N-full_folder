@@ -114,7 +114,7 @@ public class FolderPagedView extends PagedView {
      */
     private void setupContentDimensions(int count) {
         mAllocatedContentSize = count;
-        boolean done;
+        /*boolean done;
         if (count >= mMaxItemsPerPage) {
             mGridCountX = mMaxCountX;
             mGridCountY = mMaxCountY;
@@ -140,8 +140,9 @@ public class FolderPagedView extends PagedView {
                 mGridCountX = Math.max(0, mGridCountX - 1);
             }
             done = mGridCountX == oldCountX && mGridCountY == oldCountY;
-        }
-
+        }*/
+        mGridCountX = mMaxCountX;
+        mGridCountY = mMaxCountY;
         // Update grid size
         for (int i = getPageCount() - 1; i >= 0; i--) {
             getPageAt(i).setGridSize(mGridCountX, mGridCountY);
