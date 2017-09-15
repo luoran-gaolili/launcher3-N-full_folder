@@ -164,10 +164,7 @@
 <!-- Pending widget -->
     <dimen name="pending_widget_min_padding">8dp</dimen>
     <dimen name="pending_widget_elevation">2dp</dimen>
-<<<<<<< HEAD
     <dimen name="folder_name_padding">10dp</dimen>
     <dimen name="folder_available_icon_space">47dp</dimen>
     <dimen name="folder_available_icon_height">15dp</dimen>
-=======
->>>>>>> origin/master
 </resources>
